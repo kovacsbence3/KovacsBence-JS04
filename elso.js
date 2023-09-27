@@ -1,4 +1,4 @@
-let betumeret = "kisbetu";
+let betumeret = "nincs";
 function kisBetu(){
     betumeret = document.getElementById("kisBetu").value;
     // console.log(betumeret);
@@ -13,8 +13,10 @@ function varazsoljunk(){
     // console.log(szoveg)
     if (betumeret == "kisbetu"){
         szoveg = szoveg.toLowerCase();
-    } else{
+    } else if ("nagyBetu"){
         szoveg = szoveg.toUpperCase();
+    } else if ("nincs"){
+        alert("nem választottad ki, hogy kis vagy nagybetűre történjen az átalakítás")
     }
     // console.log(szoveg);
     document.getElementById("szoveg").value = szoveg;
