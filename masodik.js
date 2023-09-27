@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = urlap["email"].value;
         const jelszo = urlap["jelszo"].value;
         const jelszoRe = urlap["jelszoRe"].value;
-        const datum = urlap["datum"];
+        const datum = urlap["datum"].value;
         nevhossz = nev.lenght;
         console.log(nev, email, jelszo, jelszoRe, nevhossz);
         let megfelelo = true;
