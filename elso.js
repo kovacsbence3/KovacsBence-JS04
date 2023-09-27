@@ -1,5 +1,5 @@
 let betumeret = "nincs";
-let atalakitas = true;
+//let atalakitas = true;
 function kisBetu(){
     betumeret = document.getElementById("kisBetu").value;
     console.log(betumeret);
@@ -16,17 +16,18 @@ function varazsoljunk(){
     if (betumeret == "kisbetu"){
         szoveg = szoveg.toLowerCase();
         atalakitas = true;
-    } else if (betumeret == "nagyBetu"){
+
+    } else if (betumeret == "nagybetu") {
         szoveg = szoveg.toUpperCase();
         atalakitas = true;
-    } else if (betumeret == "nincs"){
-        alert("Nem választottad ki, hogy kis vagy nagybetűre történjen az átalakítás.")
-        atalakitas = false;
-    }
-    if (szoveg == ""){
-        alert("Kérlek add meg az átalakítandó szöveget")
-        atalakitas = false;
-    }
     // console.log(szoveg);
+    }else{
+        alert("Kérlek add meg az átalakítás típusát")
+    }
+    if(szoveg == ""){
+        alert("Kérlek add meg az átalakítandó szöveget")
+    }
+
     document.getElementById("szoveg").value = szoveg;
 }
+
