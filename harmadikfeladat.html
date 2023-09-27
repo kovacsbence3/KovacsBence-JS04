@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmadik feladat</title>
+    <title>Masodik feladat</title>
+    <script src="harmadik.js"></script>
 </head>
 <body>
-    
+    <H1>Üdvözöllek a társasjáték adatbázisban, kérlek add meg a regisztrálni kívánt társasod paramétereit.</H1>
+    <form action="" method="get" id="tarsasjatekUrlap" name="tarsasjatekUrlap">
+        <div>
+            <label for="Jateknev">Társasjáték neve: </label>
+            <input type="text" name="Jateknev">
+        </div>
+        <div>
+            <label for="jatekIdo">Játékidő: </label>
+            <input type="number" name="jatekIdo" placeholder="Adja meg a játékidőt (percben)">
+        </div>
+        <div>
+            <label>Játék típusa:</label>
+            <input type="radio" name="tipus" id="csaladi" value="csaladi">
+            <label for="csaladi">Családi</label>
+            <input type="radio" name="tipus" id="partyJáték" value="partyJáték">
+            <label for="partyJáték">Party játék</label>
+            <input type="radio" name="tipus" id="strategiai" value="strategiai">
+            <label for="strategiai">Stratégiai</label>
+        </div>
+        <div>
+            <label for="ajanlottFo">Ajánlott játékosszám</label>
+            <select id="ajanlottFo" name="ajanlottFo">
+                <option value="" selected disabled>Ennyi fővel a legizgalmasabb játszani</option>
+                <option value="1">2 fő</option>
+                <option value="2">3-6 fő</option>
+                <option value="3">7-10 fő</option>
+                <option value="3">10+ fő</option>
+            </select>
+        </div>
+        <div>
+            <label for="kiadasiEv">Kiadásának éve: </label>
+            <input type="date" name="kiadasiEv" placeholder="Adja meg a kiadás évét">
+        </div>
+        <div>
+            <label for="ar">Ára: </label>
+            <input type="text" name="ar" placeholder="Adja meg a játék árát.(Forintban)">
+        </div>
+        <button type = "submit">Regisztrálom a társasom</button>
+    </form>
 </body>
-</html>

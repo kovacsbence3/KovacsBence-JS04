@@ -1,7 +1,6 @@
 const lista = [];
-
 document.addEventListener("DOMContentLoaded", () => {
-    const urlap = document.forms["urlap"]
+    const urlap = document.forms["urlap"];
     urlap.addEventListener("submit", (event) => {
         event.preventDefault();
         const nev = urlap["nev"].value;
