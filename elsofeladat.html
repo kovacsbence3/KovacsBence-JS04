@@ -7,10 +7,11 @@
     <script src="elso.js"></script>
 </head>
 <body>
-    <input placeholder="Ide írhat">
-    <input type="radio" name="betu" id="betu" value="betu">
-    <label for="betu">Nagy betű</label>
-    <input type="radio" name="betu" id="betu" value="betu">
+    <input id = "szoveg" placeholder="Ide írhat">
+    <input onclick="kisBetu()" type="radio" name="betu" value="kisbetu" id = "kisBetu">
     <label for="betu">Kis betű</label>
+    <input onclick="nagyBetu()" type="radio" name="betu" value="nagybetu" id = "nagyBetu">
+    <label for="betu">Nagy betű</label>
+    <button onclick="varazsoljunk()" >Átalakítás</button>
 </body>
 </html>
