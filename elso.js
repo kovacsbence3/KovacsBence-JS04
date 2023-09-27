@@ -9,16 +9,18 @@ function nagyBetu(){
 
 }
 function varazsoljunk(){
+    let atalakitas = true;
     szoveg = document.getElementById("szoveg").value;
     // console.log(szoveg)
     if (betumeret == "kisbetu"){
         szoveg = szoveg.toLowerCase();
-    } else if ("nagyBetu"){
+    } else if (betumeret == "nagyBetu"){
         szoveg = szoveg.toUpperCase();
-    } else if ("nincs"){
-        alert("nem választottad ki, hogy kis vagy nagybetűre történjen az átalakítás")
+    } else if (betumeret == "nincs"){
+        alert("Nem választottad ki, hogy kis vagy nagybetűre történjen az átalakítás.")
     }
     // console.log(szoveg);
+    if (atalakitas){
     document.getElementById("szoveg").value = szoveg;
-
+    }
 }
